@@ -21,7 +21,7 @@ public class JobValidationTests {
     }
     @Test
     void whenAllFieldsCorrectThenValidationSucceeds(){
-        var job = new Job("9", "Software Engineer", "Big Name Company", "Java Software Engineer", "Java", "Sprinh Boot");
+        var job = new Job("9", "Software Engineer", "Big Name Company", "Java Software Engineer", "Java", "Spring Boot");
         Set<ConstraintViolation<Job>> violations = validator.validate(job);
         assertThat(violations).isEmpty();
     }
